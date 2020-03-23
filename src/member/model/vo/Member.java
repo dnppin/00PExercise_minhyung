@@ -9,9 +9,9 @@ public class Member {
 	private char gender;
 	private String email;
 	
-	public void Member() {}
+	public Member() {}
 	
-	public void Member(String userId, String userPwd, String userName, int age, char gender, String email) {
+	public Member(String userId, String userPwd, String userName, int age, char gender, String email) {
 		this.userId = userId;
 		this.userPwd = userPwd;
 		this.userName = userName;

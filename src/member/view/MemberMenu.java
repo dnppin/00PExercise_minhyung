@@ -27,7 +27,7 @@ public class MemberMenu {
 
 			switch(menuNum) {
 
-			case 1 : MemberManager.insertMember(); break;
+			//case 1 : MemberManager.insertMember(); break;
 			//case 2 : searchMemberMenu(); break;
 			//case 3 : updateMemberMenu(); break;
 			//case 4 : deleteMemberMenu(); break;
