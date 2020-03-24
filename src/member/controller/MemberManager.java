@@ -39,7 +39,7 @@ public class MemberManager {
 		
 		for(int i = 0; i < m.length; i++) {
 			if(m[i].getUserId().equals(id)) {
-				//printOne();
+				printOne(m[i]);
 			} else {
 				System.out.println("검색한 회원 정보가 존재하지 않습니다.");
 				return;
@@ -56,7 +56,7 @@ public class MemberManager {
 		
 		for(int i = 0; i < m.length; i++) {
 			if(m[i].getUserName().equals(name)) {
-				//printOne();
+				printOne(m[i]);
 			} else {
 				System.out.println("검색한 회원 정보가 존재하지 않습니다.");
 				return;
@@ -72,7 +72,7 @@ public class MemberManager {
 		
 		for(int i = 0; i < m.length; i++) {
 			if(m[i].getEmail().equals(email)) {
-				//printOne();
+				printOne(m[i]);
 			} else {
 				System.out.println("검색한 회원 정보가 존재하지 않습니다.");
 				return;
@@ -166,6 +166,13 @@ public class MemberManager {
 					"이름 : " + m[i].getUserName() + "나이 : " + m[i].getAge() + "성별 : " + m[i].getGender()
 					+ "이메일 : " + m[i].getEmail());
 		}
+		
+	}
+	
+	public void printOne(Member m) {
+		
+		System.out.println();
+		
 		
 	}
 
