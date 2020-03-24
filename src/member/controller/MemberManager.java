@@ -130,6 +130,23 @@ public class MemberManager {
 		}
 	}
 	
+	public void deleteOne() {
+		
+		System.out.print("탈퇴할 회원의 아이디를 입력하세요 : ");
+		String id = sc.next();
+		
+		for(int i = 0; i < ctn; i++) {
+			if(m[i].getUserId().contentEquals(id)) {
+				m[i] = m[i+1];
+				ctn--;
+			} else {
+				System.out.println("삭제할 회원 정보가 존재하지 않습니다.");
+			}
+			
+		}
+		
+	}
+	
 	public static void printAllMember() {
 		
 		
