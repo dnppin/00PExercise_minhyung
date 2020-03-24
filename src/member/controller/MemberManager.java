@@ -116,6 +116,18 @@ public class MemberManager {
 	
 	public void updateEmail() {
 		
+		System.out.print("수정할 회원의 아이디를 입력하세요 : ");
+		String id = sc.next();
+		
+		for(int i = 0; i < m.length; i++) {
+			if(m[i].getUserId().equals(id)) {
+				System.out.print("변경할 회원의 이메일 주소를 입력하세요 : ");
+				String email = sc.next();
+				m[i].setEmail(email);
+				System.out.println("이메일 수정이 완료되었습니다.");
+				return;
+			}
+		}
 	}
 	
 	public static void printAllMember() {
