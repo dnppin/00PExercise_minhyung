@@ -141,14 +141,29 @@ public class MemberManager {
 				ctn--;
 			} else {
 				System.out.println("삭제할 회원 정보가 존재하지 않습니다.");
-			}
-			
+			}	
 		}
+	}
+	
+	public void deleteAll() {
+		
+		for(int i = 0; i < ctn; i++) {
+			m[i].setUserId("");
+			m[i].setUserPwd("");
+			m[i].setUserName("");
+			m[i].setAge(0);
+			m[i].setGender(' ');
+			m[i].setEmail("");
+		}
+		ctn = 0;
 		
 	}
 	
-	public static void printAllMember() {
+	public  void printAllMember() {
 		
+		for(int i = 0; i <= ctn; i++) {
+	
+		}
 		
 	}
 
